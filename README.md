@@ -26,7 +26,7 @@ The portfolio serves as an online professional profile where visitors can learn 
 
 ## Educational Background
 
-My educational journey began at Singobuli Primary School, followed by Maroleni Secondary School, where I successfully completed my National Senior Certificate (Matric) in 2023.
+My educational journey began at Sinqobile Primary School, followed by Marholeni Secondary School, where I successfully completed my National Senior Certificate (Matric) in 2023.
 
 In 2025, I enrolled at Rosebank International University to pursue a qualification in Information Technology with a specialization in Software Development. Throughout my studies, I have gained practical experience in programming, web development, databases, information security, systems analysis, and software engineering.
 
@@ -40,10 +40,10 @@ The portfolio highlights my exposure to various academic modules, including:
 * Programming Logic and Design (PLD5121)
 * Information Security (INS6211)
 * Systems Analysis and Design (SAD5021)
-* Database Systems (DBS6221)
+* Database Systems Introduction(DBS6221)
 * Web Development
-* Artificial Intelligence
-* Software Engineering
+* Business Information System (BUIS) 
+* 
 
 ---
 
