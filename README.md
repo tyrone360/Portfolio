@@ -1,6 +1,6 @@
 # Hlulani Tyrone Mthombeni Portfolio Website
 
-## Overview
+
 
 This project is a personal portfolio website developed to showcase my academic background, technical skills, projects, and professional journey as an Information Technology student specializing in Software Development.
 
@@ -103,10 +103,10 @@ The portfolio website includes the following sections:
 
 This project was developed using:
 
-* HTML5
-* CSS3
+* HTML (5)
+* CSS  (3)
 * JavaScript
-* Font Awesome Icons
+
 
 ---
 
