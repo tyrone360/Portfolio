@@ -1,5 +1,5 @@
 const faders = document.querySelectorAll("section");
-
+//
 const revealSections = () => {
     faders.forEach(section => {
         const position = section.getBoundingClientRect().top;
@@ -29,7 +29,7 @@ let currentText = "";
 let letter = "";
 
 (function type(){
-
+//
 if(count === text.length){
 count = 0;
 }
@@ -44,13 +44,13 @@ if(letter.length === currentText.length){
 
 count++;
 index = 0;
-
+//
 setTimeout(type,1000);
 
 }else{
 
 setTimeout(type,120);
-
+//
 }
 
 })();
