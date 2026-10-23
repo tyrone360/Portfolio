@@ -16,6 +16,7 @@ window.addEventListener("load", () => {
     revealSections();
 });
 
+
 const text = [
 "Software Developer",
 "Web Developer",
