@@ -1,7 +1,5 @@
 # Hlulani Tyrone Mthombeni Portfolio Website
 
-
-
 This project is a personal portfolio website developed to showcase my academic background, technical skills, projects, and professional journey as an Information Technology student specializing in Software Development.
 
 The portfolio serves as an online professional profile where visitors can learn more about me, explore my projects, view my educational background, and access my curriculum vitae (CV).
