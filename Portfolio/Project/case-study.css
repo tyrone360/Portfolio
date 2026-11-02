@@ -1,0 +1,915 @@
+
+/* PROJECT OVERVIEW */
+
+.project-overview {
+    padding-top: 70px;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.overview-description,
+.overview-details,
+.objective-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.overview-description h3 {
+    color: #00e5ff;
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.overview-description p {
+    color: #d3dce7;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.overview-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.detail-card {
+    background: #0b1221;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.detail-card h4 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+.detail-card p {
+    color: #d3dce7;
+    line-height: 1.6;
+}
+
+/* OBJECTIVES */
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.objective-card {
+    transition: 0.4s;
+}
+
+.objective-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,229,255,0.15);
+}
+
+.objective-card i {
+    color: #00e5ff;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.objective-card h3 {
+    margin-bottom: 12px;
+}
+
+.objective-card p {
+    color: #d3dce7;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    .overview-content {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+.case-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.case-hero .buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.case-hero .btn {
+    display: inline-block;
+}
+/* TECHNICAL ARCHITECTURE */
+
+.architecture {
+    padding-top: 70px;
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.architecture-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.4s ease;
+}
+
+.architecture-card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+    box-shadow: 0 15px 35px rgba(0,229,255,0.12);
+}
+
+.architecture-card i {
+    font-size: 2rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.architecture-card h3 {
+    margin-bottom: 15px;
+}
+
+.architecture-card p {
+    color: #d3dce7;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .architecture-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* DEVELOPMENT PROCESS */
+
+.development {
+    padding-top: 70px;
+}
+
+.development-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.development-card {
+    position: relative;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 35px;
+    transition: 0.4s ease;
+}
+
+.development-card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+    box-shadow: 0 15px 35px rgba(0,229,255,0.12);
+}
+
+.development-card .step-number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(0,229,255,0.2);
+}
+
+.development-card i {
+    font-size: 2rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.development-card h3 {
+    margin-bottom: 15px;
+}
+
+.development-card p {
+    color: #d3dce7;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .development-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* PROJECT SCREENSHOTS */
+
+.screenshots {
+    padding-top: 70px;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.screenshot-card {
+    overflow: hidden;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    transition: 0.4s ease;
+}
+
+.screenshot-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.screenshot-info {
+    padding: 22px;
+}
+
+.screenshot-info h3 {
+    margin-bottom: 10px;
+}
+
+.screenshot-info p {
+    color: #d3dce7;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-card img {
+        height: auto;
+    }
+}
+/* CHALLENGES AND SOLUTIONS */
+
+.challenges {
+    padding-top: 70px;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.challenge-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.4s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+    box-shadow: 0 15px 35px rgba(0,229,255,0.12);
+}
+
+.challenge-card i {
+    font-size: 2rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.challenge-card h3 {
+    margin-bottom: 20px;
+}
+
+.challenge-card h4 {
+    color: #00e5ff;
+    margin: 15px 0 8px;
+}
+
+.challenge-card p {
+    color: #d3dce7;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .challenges-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* PROJECT LINKS */
+
+.project-links {
+    padding-top: 70px;
+}
+
+.project-links-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.project-link-card {
+    text-align: center;
+    padding: 40px 30px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.project-link-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+}
+
+.project-link-card i {
+    font-size: 3rem;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.project-link-card h3 {
+    margin-bottom: 15px;
+}
+
+.project-link-card p {
+    color: #d3dce7;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.project-link-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* PROJECT CONCLUSION */
+
+.project-conclusion {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.project-conclusion p {
+    color: #d3dce7;
+    line-height: 1.9;
+    margin: 20px 0;
+}
+
+.project-conclusion h3 {
+    color: #00e5ff;
+    margin-top: 35px;
+}
+
+.project-conclusion h2:last-of-type {
+    margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+    .project-links-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* CORE FEATURES & TECHNOLOGY */
+
+.core-features,
+.technology {
+    padding-top: 70px;
+}
+
+.features-grid,
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.feature-card,
+.technology-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 28px;
+    transition: 0.4s ease;
+}
+
+.feature-card:hover,
+.technology-card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+    box-shadow: 0 15px 35px rgba(0,229,255,0.12);
+}
+
+.feature-card i,
+.technology-card i {
+    font-size: 2.2rem;
+    color: #00e5ff;
+    margin-bottom: 18px;
+}
+
+.feature-card h3,
+.technology-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p,
+.technology-card p {
+    color: #d3dce7;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .features-grid,
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid,
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================
+   GLOBAL RESPONSIVE SETTINGS
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body.case-study {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.case-study img {
+    max-width: 100%;
+}
+
+/* =====================================
+   MAIN NAVIGATION
+===================================== */
+
+.case-study header nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.case-study header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.case-study header nav ul li a {
+    white-space: nowrap;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.case-hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 5%;
+}
+
+.case-hero h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+
+.case-hero h2 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.case-hero > p {
+    max-width: 750px;
+    line-height: 1.8;
+}
+
+.case-hero .buttons {
+    margin-top: 25px;
+}
+
+/* =====================================
+   ALL SECTIONS
+===================================== */
+
+.case-study main > section {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 5%;
+}
+
+.case-study .section-title {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    line-height: 1.3;
+}
+
+.case-study .section-subtitle {
+    max-width: 750px;
+    line-height: 1.8;
+}
+
+/* =====================================
+   RESPONSIVE GRIDS
+===================================== */
+
+.overview-content,
+.overview-details,
+.objectives-grid,
+.architecture-grid,
+.development-grid,
+.screenshot-grid,
+.challenges-grid,
+.project-links-container,
+.features-grid,
+.technology-grid {
+    min-width: 0;
+}
+
+.overview-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.overview-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.objectives-grid,
+.features-grid,
+.technology-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.architecture-grid,
+.development-grid,
+.challenges-grid,
+.screenshot-grid,
+.project-links-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Prevent long text from breaking layouts */
+
+.overview-description,
+.overview-details,
+.detail-card,
+.objective-card,
+.architecture-card,
+.development-card,
+.screenshot-card,
+.challenge-card,
+.feature-card,
+.technology-card,
+.project-link-card {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* =====================================
+   SCREENSHOT GALLERY
+===================================== */
+
+.screenshot-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.case-study .btn {
+    max-width: 100%;
+    text-align: center;
+    white-space: normal;
+}
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width: 900px) {
+
+    .overview-content {
+        grid-template-columns: 1fr;
+    }
+
+    .objectives-grid,
+    .features-grid,
+    .technology-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* =====================================
+   MOBILE DEVICES
+===================================== */
+
+@media (max-width: 600px) {
+
+    .case-study header nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 18px 15px;
+    }
+
+    .case-study header nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .case-study header nav ul li a {
+        font-size: 13px;
+    }
+
+    .case-hero {
+        padding: 75px 20px;
+    }
+
+    .case-hero h1 {
+        font-size: clamp(2.3rem, 12vw, 3.5rem);
+    }
+
+    .case-hero > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .case-study main > section {
+        padding: 50px 20px;
+    }
+
+    .case-study .section-title {
+        font-size: 1.8rem;
+    }
+
+    .overview-content,
+    .overview-details,
+    .objectives-grid,
+    .architecture-grid,
+    .development-grid,
+    .screenshot-grid,
+    .challenges-grid,
+    .project-links-container,
+    .features-grid,
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-description,
+    .overview-details,
+    .objective-card,
+    .architecture-card,
+    .development-card,
+    .challenge-card,
+    .feature-card,
+    .technology-card,
+    .project-link-card {
+        padding: 22px;
+    }
+
+    .screenshot-card img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-conclusion {
+        padding: 50px 20px;
+    }
+
+    .case-study .btn {
+        padding: 13px 20px;
+    }
+
+}
+
+/* =====================================
+   SMALL PHONES
+===================================== */
+
+@media (max-width: 380px) {
+
+    .case-study header nav ul {
+        gap: 9px;
+    }
+
+    .case-study header nav ul li a {
+        font-size: 12px;
+    }
+
+    .case-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .case-study main > section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .case-hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+.github-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+/* PROJECT PREVIEW */
+
+.project-preview {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.preview-heading span {
+    color: #00ffff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.preview-heading h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    margin: 15px 0;
+}
+
+.preview-heading p {
+    color: #aaa;
+    max-width: 650px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+
+.preview-image {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 16px;
+    background: rgba(0, 255, 255, 0.04);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.08);
+}
+
+.preview-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .project-preview {
+        padding: 30px 5%;
+        margin: 35px auto;
+    }
+
+    .preview-image {
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+/* MOBILE NAVIGATION IMPROVEMENT */
+
+@media (max-width: 600px) {
+
+    .case-study header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .case-study header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 18px;
+        padding: 10px 0;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .case-study header nav ul li {
+        flex-shrink: 0;
+    }
+
+    .case-study header nav ul a {
+        font-size: 13px;
+    }
+}
+/* BACK TO TOP BUTTON */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00ffff;
+    color: #000;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1000;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
