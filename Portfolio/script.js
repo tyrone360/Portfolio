@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!loader || !progress || !percentage) return;
 
-    const duration = 7000;
+    const duration = 3500;
     const startTime = Date.now();
 
     const updateLoader = () => {
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Loading web development projects...",
         "Discovering software solutions...",
         "Building digital experiences...",
-        "Almost ready — welcome aboard!"
+        "Almost ready ï¿½ welcome aboard!"
     ];
 
     let index = 0;
