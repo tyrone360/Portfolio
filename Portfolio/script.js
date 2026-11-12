@@ -201,3 +201,61 @@ if ("serviceWorker" in navigator) {
             .catch(error => console.error("Offline support error:", error));
     });
 }
+
+// =====================================
+// 7. MOBILE COLLAPSIBLE NAVIGATION
+// =====================================
+
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector("nav.site-nav");
+    const menuButton = nav?.querySelector(".menu-toggle");
+    const menu = nav?.querySelector("#primary-navigation");
+
+    if (!nav || !menuButton || !menu) return;
+
+    const closeMenu = () => {
+        nav.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+    };
+
+    const openMenu = () => {
+        nav.classList.add("menu-open");
+        menuButton.setAttribute("aria-expanded", "true");
+        menuButton.setAttribute("aria-label", "Close navigation menu");
+    };
+
+    menuButton.addEventListener("click", () => {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", event => {
+        if (!nav.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            closeMenu();
+            menuButton.focus();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+});
+

@@ -59,7 +59,7 @@
 </div>
 
 <header>
-    <nav>
+    <nav class="site-nav">
         <a href="#home" class="brand">
             <img src="pictures/000.jpeg" alt="Tyrone logo">
             <div class="brand-text">
@@ -67,8 +67,16 @@
                 <small>          Portfolio</small>
             </div>
         </a>
+        <button class="menu-toggle" type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <ul>
+        <ul id="primary-navigation" class="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
@@ -101,7 +109,7 @@
 
         <div class="buttons">
 
-            <a href="doc/cv.docx"
+            <a href="Doc/cv.docx" download="My-CV.docx"
                download
                class="btn">
                Download CV
@@ -238,7 +246,7 @@
    <section class="fade">
     <div class="buttons">
 
-        <a href="doc/AWS.pdf"
+        <a href="Doc/AWS.pdf" download="AWS-Certificate.pdf"
            download
            class="btn">
             UDACITY AI PRACTITIONER CHALLENGE CERTIFICATE
@@ -775,4 +783,6 @@
 
 </body>
 </html>
+
+
 
