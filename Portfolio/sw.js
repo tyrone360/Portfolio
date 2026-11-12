@@ -1,13 +1,23 @@
-﻿const CACHE_NAME = "tyrone-portfolio-v1";
+﻿const CACHE_NAME = "tyrone-portfolio-v2";
 const OFFLINE_URL = new URL("offline.html", self.registration.scope).href;
+
+const APP_FILES = [
+    "./",
+    "index.html",
+    "manifest.json",
+    "style.css",
+    "script.js",
+    "offline.html",
+    "pictures/000.jpeg",
+    "pictures/icon-192.png",
+    "pictures/icon-512.png",
+    "pictures/apple-touch-icon.png"
+];
 
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => cache.addAll([
-                OFFLINE_URL,
-                new URL("pictures/000.jpeg", self.registration.scope).href
-            ]))
+            .then(cache => cache.addAll(APP_FILES))
             .then(() => self.skipWaiting())
     );
 });
