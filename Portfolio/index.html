@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hlulani Tyrone Mthombeni | Portfolio</title>
+    <title>Hlulani Tyrone Mthombeni | Software Developer</title>
+
+<meta name="description" content="Explore the portfolio of Hlulani Tyrone Mthombeni, showcasing software development, web applications, desktop applications and AI projects.">
+
+<meta name="theme-color" content="#050816">
 
     <link rel="stylesheet" href="style.css">
 
@@ -12,6 +16,45 @@
 </head>
 
 <body>
+<div id="portfolio-loader" class="portfolio-loader" role="status" aria-live="polite">
+    <div class="loader-content">
+
+        <div class="loader-brand">
+            <img src="pictures/000.jpeg" alt="Portfolio logo">
+        </div>
+
+        <h2 class="loader-headline">A CREATIVE JOURNEY</h2>
+        <p class="loader-intro">Ideas become experiences.</p>
+
+        <div class="loader-road">
+            <div class="loader-car">
+                <svg viewBox="0 0 100 55" aria-hidden="true">
+                    <path d="M12 35 L18 23 Q20 19 27 18 L39 8 Q43 5 51 5 L70 8 Q76 9 81 20 L91 25 L95 35 L93 43 L8 43 L7 37 Z" fill="#00e5ff"/>
+                    <path d="M34 18 L44 9 L62 9 L73 19 Z" fill="#10233d"/>
+                    <path d="M18 27 L82 27" stroke="#ffffff" stroke-width="2" opacity=".7"/>
+                    <circle cx="25" cy="42" r="9" fill="#101827" stroke="#ffffff" stroke-width="3"/>
+                    <circle cx="77" cy="42" r="9" fill="#101827" stroke="#ffffff" stroke-width="3"/>
+                    <circle cx="25" cy="42" r="3" fill="#00e5ff"/>
+                    <circle cx="77" cy="42" r="3" fill="#00e5ff"/>
+                    <path d="M88 29 L96 31 L95 36 L88 36 Z" fill="#ffffff"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="loader-bar">
+            <div id="loader-progress"></div>
+        </div>
+
+        <span id="loader-percentage">0%</span>
+
+        <p id="loader-message" class="loader-message">
+            Preparing your experience...
+        </p>
+
+        <p class="loader-footer">WEB DEVELOPMENT • SOFTWARE • INNOVATION</p>
+
+    </div>
+</div>
 
 <header>
     <nav>
@@ -61,11 +104,6 @@
                class="btn">
                Download CV
             </a>
-
-            <a href="#projects" class="btn2">
-                View Projects
-            </a>
-
         </div>
 
     </div>
@@ -131,7 +169,7 @@
                 <span class="timeline-date">2010 - 2014</span>
             </div>
             <p>Sinqobile Primary School</p>
-           
+
         </div>
 
         <div class="timeline-item">
@@ -195,10 +233,20 @@
         </div>
 
     </div>
+   <section class="fade">
+    <div class="buttons">
 
+        <a href="doc/AWS.pdf"
+           download
+           class="btn">
+            UDACITY AI PRACTITIONER CHALLENGE CERTIFICATE
+        </a>
+    </div>
+</section>
 </section>
 
 <!-- MODULES -->
+
 
 <section id="modules" class="fade">
 
@@ -208,39 +256,38 @@
 
         <div class="module-group">
             <h3>Semester 1</h3>
-            <div class="skill-card">Programming Logic & Design (PLD5121)</div>
-            <div class="skill-card">Business Information Systems (BUIS6221)</div>
-            <div class="skill-card">Programming (PROG5221)</div>
-            <div class="skill-card">Information Quality Technology (IQTT6001)</div>
+            <div class="skill-card">Business Information Systems (BUIS5111)</div>
+            <div class="skill-card">Programming (PROG5121)</div>
+            <div class="skill-card">Information Quality Technology (IQTT5111)</div>
+            <div class="skill-card">Information Technology Project (ITPP5112)</div>
         </div>
 
         <div class="module-group">
             <h3>Semester 2</h3>
-            <div class="skill-card">Programming (PRG6011)</div>
-            <div class="skill-card">Web Development (WEBD6011)</div>
-            <div class="skill-card">Information Technology Project(ITTP5021)</div>
-            <div class="skill-card">Database Introduction (DBS6221)</div>
+            <div class="skill-card">Database Systems (DATA6211)</div>
+            <div class="skill-card">Database Systems (DATA6222)</div>
+            <div class="skill-card">Human Computer Interaction (HCIN6222)</div>
+            <div class="skill-card">Project Management (IPMA6212)</div>
         </div>
 
         <div class="module-group">
             <h3>Semester 3</h3>
-            <div class="skill-card">Operation Systems (OPSY5121)</div>
-            <div class="skill-card">Systems Analysis & Design (SAD5021)</div>
-            <div class="skill-card">Programming (PROG5121)</div>
-            <div class="skill-card">Information Security (ISY5121)</div>
+            <div class="skill-card">Information Security (ISEC6321)</div>
+            <div class="skill-card">Operating Systems (OPSY5121)</div>
+            <div class="skill-card">Professional Development (PRLD5121)</div>
         </div>
 
         <div class="module-group">
             <h3>Semester 4</h3>
-            <div class="skill-card">Artificial Intelligence (AI5021)</div>
-            <div class="skill-card">Software Engineering (SWEN5021)</div>
-            <div class="skill-card">Programming (PROG5121)</div>
-            <div class="skill-card">Database Intermediate (DBS6221)</div>
+            <div class="skill-card">Programming (PROG6112)</div>
+            <div class="skill-card">Programming (PROG6212)</div>
+            <div class="skill-card">Programming (PROG622)</div>
         </div>
 
     </div>
 
 </section>
+
 
 <!-- PROJECTS -->
 
@@ -287,6 +334,244 @@
             <p>Clean and intuitive mobile application interface design.</p>
         </div>
     </div>
+</section><!-- PROJECTS -->
+
+<section id="projects" class="fade">
+
+    <h2 class="section-title">Confidential & Modern Artwork</h2>
+
+    <p class="section-subtitle">
+        Explore my software development projects, desktop applications,
+        web applications and practical technology solutions.
+    </p>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1: HAUTE COUTURE -->
+
+        <div class="project-card">
+            <img src="Screenshot/sc 1.png" alt="Haute Couture e-commerce website">
+
+            <h3>Haute Couture</h3>
+
+            <p>
+                A modern fashion e-commerce website featuring product browsing,
+                shopping cart management, checkout and EmailJS integration.
+            </p>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, EmailJS</p>
+
+            <a href="Project/haute-couture.html" class="btn">
+                View Case Study →
+            </a>
+
+            <a href="https://github.com/tyrone360/Haute-Couture"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn2">
+                GitHub Repository →
+            </a>
+        </div>
+
+
+        <!-- PROJECT 2: TYRONE CYBERSHIELD -->
+
+        <div class="project-card">
+            <img src="Screenshot/sc 2.png" alt="Tyrone CyberShield application dashboard">
+
+            <h3>Tyrone CyberShield (A.I)</h3>
+
+            <p>
+                A C# WPF cybersecurity awareness desktop application
+                featuring an interactive dashboard, Knowledge Centre,
+                learning progress tracking and an offline chatbot.
+            </p>
+
+            <p><strong>Technologies:</strong> C#, WPF, XAML, .NET Framework 4.8</p>
+
+            <a href="Tyrone CyberShield (A.I)/index.html" class="btn">
+                View Case Study →
+            </a>
+
+            <a href="https://github.com/tyrone360/ArtificialInteligency"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn2">
+                GitHub Repository →
+            </a>
+        </div>
+
+
+<!-- CAMPUSCONNECT PROJECT -->
+
+<div class="project-card">
+
+    <img src="Screenshot/sc 3.png"
+         alt="CampusConnect student events website">
+
+    <h3>CampusConnect – Student Events Platform</h3>
+
+    <p>
+        A student-focused website that helps college students
+        discover campus activities, explore events and register
+        to participate in their college community.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        HTML, CSS, JavaScript, Local Storage
+    </p>
+
+    <a href="Campus Connect/index.html" class="btn">
+        View Case Study →
+    </a>
+
+    <a href="https://github.com/tyrone360/CampusConnect"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn2">
+        GitHub Repository →
+    </a>
+
+</div>
+
+<!-- SYSTEM ADMINISTRATION PROJECT -->
+
+<div class="project-card">
+
+    <div class="project-icon">
+        <span>⚙️</span>
+    </div>
+
+    <h3>System Administration & User Registration</h3>
+
+    <p>
+        A Java-based application for user registration,
+        authentication and system administration.
+        Includes user account management and role-based access control.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        Java, OOP, User Authentication
+    </p>
+
+    <a href="System-Administration/index.html" class="btn">
+        View Case Study →
+    </a>
+
+    <a href="https://github.com/tyrone360/System_Work_Out"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn2">
+        GitHub Repository →
+    </a>
+
+</div>
+
+
+<!-- MINING WEBSITE PROJECT -->
+
+ <div class="project-card">
+            <img src="Screenshot/sc 4.png" alt="Tyrone CyberShield application dashboard">
+
+
+    <h3>Mining Company Website</h3>
+
+    <p>
+        A professional mining company website showcasing company
+        information, locations, projects and contact details.
+        Designed to provide visitors with an informative online experience.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        HTML5, CSS3, JavaScript
+    </p>
+
+    <a href="Mining-Website/index.html" class="btn">
+        View Case Study →
+    </a>
+
+    <a href="https://github.com/tyrone360/Minningwebsite"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn2">
+        GitHub Repository →
+    </a>
+
+</div>
+
+<!-- PROJECT: TV CHANNEL -->
+
+<div class="project-card">
+
+    <img src="Screenshot/sc 5.png"
+         alt="TV Channel Series Management System">
+
+    <h3>TV Channel – Series Management System</h3>
+
+    <p>
+        A Java-based console application designed to manage
+        television series. Users can capture, search, update,
+        delete and generate reports of series records.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        Java, NetBeans, OOP, ArrayList
+    </p>
+
+    <a href="TV Channel/index.html" class="btn">
+        View Case Study →
+    </a>
+
+    <a href="https://github.com/tyrone360/TV-channel"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn2">
+        GitHub Repository →
+    </a>
+
+</div>
+
+<!-- PROJECT 07: ASP.NET CORE WEB API -->
+
+<div class="project-card">
+
+    <img src="Screenshot/sc 6.png"
+         alt="PROJECT 07: ASP.NET CORE WEB API">
+
+    <h3>ASP.NET Core Web API</h3>
+
+    <p>
+        A backend development project built with ASP.NET Core and C#.
+        Features RESTful API endpoints, SQL Server database integration,
+        Swagger documentation and JWT authentication.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        C#, ASP.NET Core, .NET 8, SQL Server, Swagger
+    </p>
+
+    <a href="Netframes/index.html" class="btn">
+        View Case Study →
+    </a>
+
+    <a href="https://github.com/tyrone360/project"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn2">
+        GitHub Repository →
+    </a>
+
+</div>
+
+
+
+    </div>
+
 </section>
 
 <!-- LIFE -->
@@ -371,39 +656,120 @@
 
 </section>
 
+
 <!-- CONTACT -->
 
 <section id="contact" class="fade">
 
     <h2 class="section-title">Contact Me</h2>
 
+    <p class="section-subtitle">
+        Have a project, collaboration or opportunity?
+        Send me a message and let's connect.
+    </p>
+
     <div class="contact-grid">
 
         <div class="contact-card contact-card--wide">
+
             <h3>Let's Create Together</h3>
-            <p>If you have a project, collaboration, or internship opportunity, feel free to reach out.</p>
-            <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:hlulani@example.com">tshungutyrone@gmail.com</a></p>
-            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong> 5450 Arc Streeet, Devland, Soweto, Johannesburg, South Africa</p>
-            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:">+27 69 448 0217</a></p>
+
+            <p>
+                I'm always interested in learning, building
+                meaningful projects and connecting with others
+                in technology.
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <strong>Email:</strong>
+                <a href="mailto:YOUR_EMAIL@example.com">
+                    YOUR_EMAIL@example.com
+                </a>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <strong>Location:</strong> Johannesburg, South Africa
+            </p>
+
             <div class="socials">
-                <a href="#" aria-label="https://github.com/dashboard"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="https://www.linkedin.com/in/tyrone-mthombeni-092451332/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrIQ6d12cQuyDD1T37CvbTg%3D%3D"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="#" aria-label="https://www.instagram.com/tyrone_zar9/"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="https://www.facebook.com/profile.php?id=61578991333526"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-                <a href="#" aria-label="Tumblr"><i class="fab fa-tumblr"></i></a>
-                <a href="#" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+                <a href="https://github.com/tyrone360" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tyrone-mthombeni-092451332/" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/tyrone_zar9" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/tyrone_zar9/" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.behance.net/tyrone_zar9" aria-label="Behance">
+                    <i class="fab fa-behance"></i>
+                </a>
             </div>
+
         </div>
 
+        <!-- CONTACT FORM -->
+
+        <div class="contact-card">
+
+            <h3>Send Me a Message</h3>
+
+            <form id="contact-form">
+ <input
+    type="text"
+    name="website"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+    style="position:absolute; left:-9999px;"
+>
+                <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="reply_to"
+                    placeholder="Your Email Address"
+                    required
+                >
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                >
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit" id="submit-btn">
+                    Send Message
+                </button>
+
+                <p id="form-status" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
     </div>
 
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>

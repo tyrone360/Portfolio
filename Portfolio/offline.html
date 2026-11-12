@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050816">
+    <title>You're Offline | TYRONE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #10233d, #050816 70%);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .offline-container {
+            position: relative;
+            z-index: 2;
+            width: min(90%, 500px);
+            padding: 30px 20px;
+        }
+
+        .offline-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #00e5ff;
+            box-shadow: 0 0 25px #00e5ff88;
+            animation: logoPulse 2s infinite alternate;
+        }
+
+        .signal {
+            margin: 28px auto 15px;
+            font-size: 65px;
+            color: #00e5ff;
+            animation: signalPulse 1.5s infinite;
+            text-shadow: 0 0 20px #00e5ff;
+        }
+
+        h1 {
+            color: #00e5ff;
+            font-size: clamp(28px, 6vw, 42px);
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #b8c5d8;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .status {
+            margin: 20px 0;
+            color: #ffcc66;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .status::before {
+            content: "";
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 9px;
+            border-radius: 50%;
+            background: #ffcc66;
+            animation: blink 1s infinite;
+        }
+
+        .road {
+            position: relative;
+            height: 65px;
+            margin: 30px 0;
+            overflow: hidden;
+            border-top: 2px solid #00e5ff66;
+            border-bottom: 2px solid #00e5ff66;
+            background: #07101f;
+        }
+
+        .road::before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 200%;
+            height: 3px;
+            background: repeating-linear-gradient(
+                90deg, #00e5ff 0 35px, transparent 35px 65px
+            );
+            animation: roadMove .6s linear infinite;
+        }
+
+        .car {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 85px;
+            height: 55px;
+            animation: carMove 3s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 8px #00e5ff);
+        }
+
+        .car svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .retry-button {
+            display: inline-block;
+            padding: 14px 35px;
+            border: 2px solid #00e5ff;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #0077ff, #00bcd4);
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 0 18px #00e5ff55;
+            transition: .3s;
+        }
+
+        .retry-button:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 30px #00e5ff;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #00e5ff;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #00e5ff;
+            box-shadow: 0 0 12px #00e5ff;
+            animation: float 7s linear infinite;
+        }
+
+        .particle:nth-child(1) { left: 10%; top: 80%; }
+        .particle:nth-child(2) { left: 25%; top: 20%; animation-delay: 2s; }
+        .particle:nth-child(3) { left: 80%; top: 70%; animation-delay: 1s; }
+        .particle:nth-child(4) { left: 90%; top: 25%; animation-delay: 3s; }
+        .particle:nth-child(5) { left: 50%; top: 90%; animation-delay: 4s; }
+
+        @keyframes logoPulse {
+            from { box-shadow: 0 0 12px #00e5ff55; }
+            to { box-shadow: 0 0 30px #00e5ff; }
+        }
+
+        @keyframes signalPulse {
+            50% { opacity: .45; transform: scale(.92); }
+        }
+
+        @keyframes blink {
+            50% { opacity: .2; }
+        }
+
+        @keyframes roadMove {
+            to { transform: translateX(-65px); }
+        }
+
+        @keyframes carMove {
+            from { left: 0; }
+            to { left: calc(100% - 85px); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <main class="offline-container">
+
+        <img class="offline-logo" src="pictures/000.jpeg" alt="TYRONE logo">
+
+        <div class="signal" aria-hidden="true">⌁</div>
+
+        <h1>YOU'RE OFFLINE</h1>
+
+        <p class="description">
+            Looks like your internet connection has taken a break.
+            Don't worry, your digital journey is still here.
+        </p>
+
+        <p class="status" id="connection-status">
+            Checking your connection...
+        </p>
+
+        <div class="road">
+            <div class="car">
+                <svg viewBox="0 0 100 55" aria-hidden="true">
+                    <path d="M12 35 L18 23 Q20 19 27 18 L39 8 Q43 5 51 5 L70 8 Q76 9 81 20 L91 25 L95 35 L93 43 L8 43 L7 37 Z" fill="#00e5ff"/>
+                    <path d="M34 18 L44 9 L62 9 L73 19 Z" fill="#10233d"/>
+                    <circle cx="25" cy="42" r="9" fill="#101827" stroke="#fff" stroke-width="3"/>
+                    <circle cx="77" cy="42" r="9" fill="#101827" stroke="#fff" stroke-width="3"/>
+                    <circle cx="25" cy="42" r="3" fill="#00e5ff"/>
+                    <circle cx="77" cy="42" r="3" fill="#00e5ff"/>
+                </svg>
+            </div>
+        </div>
+
+        <button class="retry-button" onclick="retryConnection()">
+            TRY AGAIN
+        </button>
+
+        <p class="footer">WEB DEVELOPMENT | SOFTWARE | INNOVATION</p>
+
+    </main>
+
+    <script>
+        const statusText = document.getElementById("connection-status");
+
+        function updateConnectionStatus() {
+            if (navigator.onLine) {
+                statusText.textContent = "Connection detected — ready to retry";
+                statusText.style.color = "#00e5ff";
+            } else {
+                statusText.textContent = "No internet connection detected";
+                statusText.style.color = "#ffcc66";
+            }
+        }
+
+        function retryConnection() {
+            updateConnectionStatus();
+
+            if (navigator.onLine) {
+                window.location.href = "./index.html";
+            } else {
+                statusText.textContent = "Still offline — please check your internet";
+            }
+        }
+
+        window.addEventListener("online", updateConnectionStatus);
+        window.addEventListener("offline", updateConnectionStatus);
+
+        updateConnectionStatus();
+    </script>
+
+</body>
+</html>
